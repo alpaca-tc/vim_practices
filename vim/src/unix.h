@@ -9,6 +9,8 @@
 /*
  * Unix system-dependent filenames
  */
+// extern void bzero __ARGS((char *, int));
+// extern void bcopy __ARGS((char *, char *, int));
 
 #ifndef SYSEXRC_FILE
 # define SYSEXRC_FILE	"$HOME/.exrc"
@@ -88,9 +90,7 @@ void *memmove __ARGS((void *, void *, int));
 #  define memmove(to, from, len) bcopy(from, to, len)
 #  if !(defined(hpux) && defined(__STDC__))
 #   ifdef linux
-extern void bcopy __ARGS((const void *, void *, int));
 #   else
-extern void bcopy __ARGS((char *, char *, int));
 #   endif
 #  endif
 # endif
@@ -111,15 +111,13 @@ char *bsdmemset __ARGS((char *, int, long));
  * If you get a "redefined" error, delete the offending line.
  */
 #if !defined(__NetBSD__) && !defined(__FreeBSD__)
-  extern int	ioctl __ARGS((int, int, ...));
+  // extern int	ioctl __ARGS((int, int, ...));
 #endif
 extern int	fsync __ARGS((int));
 extern char *getwd __ARGS((char *));
 #if !defined(__NetBSD__) && !defined(__FreeBSD__)
 # ifdef linux
-   extern void bzero __ARGS((void *, int));
 # else
-   extern void bzero __ARGS((char *, int));
 # endif
 #endif
 #if defined(system_that_does_not_have_access_in_an_include_file)
