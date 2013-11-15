@@ -62,7 +62,7 @@ X11LIBDIR = /usr/X11R6/lib
 X11INCDIR = /usr/X11R6/include
 
 ### Prefix for location of files
-PREFIX = /usr/local
+PREFIX = /Users/alpaca-tc/usr
 
 ### Location of binary
 BINLOC = $(PREFIX)/bin
