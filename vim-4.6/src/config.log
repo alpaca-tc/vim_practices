@@ -1,0 +1,94 @@
+This file contains any messages produced by compilers while
+running configure, to aid debugging if configure makes a mistake.
+
+configure:1358: gcc -c -g -O -Wall -Wshadow -DX_DISPLAY_MISSING   conftest.c 1>&5
+configure:1351:10: fatal error: 'X11/Xlib.h' file not found
+#include <X11/Xlib.h>
+         ^
+1 error generated.
+configure:1812: gcc -o conftest -g -O -Wall -Wshadow   conftest.c -ltermcap  1>&5
+configure:1809:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+main() { exit(strcmp(tgoto("%p1%d", 0, 1), "1") ? 0 : 1); }
+^~~~
+configure:1809:10: warning: implicitly declaring library function 'exit' with type 'void (int) __attribute__((noreturn))'
+main() { exit(strcmp(tgoto("%p1%d", 0, 1), "1") ? 0 : 1); }
+         ^
+configure:1809:10: note: please include the header <stdlib.h> or explicitly provide a declaration for 'exit'
+configure:1809:15: warning: implicitly declaring library function 'strcmp' with type 'int (const char *, const char *)'
+main() { exit(strcmp(tgoto("%p1%d", 0, 1), "1") ? 0 : 1); }
+              ^
+configure:1809:15: note: please include the header <string.h> or explicitly provide a declaration for 'strcmp'
+configure:1809:22: warning: implicit declaration of function 'tgoto' is invalid in C99 [-Wimplicit-function-declaration]
+main() { exit(strcmp(tgoto("%p1%d", 0, 1), "1") ? 0 : 1); }
+                     ^
+configure:1809:22: warning: incompatible integer to pointer conversion passing 'int' to parameter of type 'const char *' [-Wint-conversion]
+main() { exit(strcmp(tgoto("%p1%d", 0, 1), "1") ? 0 : 1); }
+                     ^~~~~~~~~~~~~~~~~~~~
+5 warnings generated.
+configure:1835: gcc -o conftest -g -O -Wall -Wshadow   conftest.c -ltermcap  1>&5
+configure:1832:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+main() { exit(toupper('A') == 'A' && tolower('z') == 'z'); }
+^~~~
+configure:1832:10: warning: implicitly declaring library function 'exit' with type 'void (int) __attribute__((noreturn))'
+main() { exit(toupper('A') == 'A' && tolower('z') == 'z'); }
+         ^
+configure:1832:10: note: please include the header <stdlib.h> or explicitly provide a declaration for 'exit'
+2 warnings generated.
+configure:1857: gcc -c -g -O -Wall -Wshadow  conftest.c 1>&5
+configure:1853:1: warning: implicit declaration of function 'fprintf' is invalid in C99 [-Wimplicit-function-declaration]
+fprintf("(" __DATE__ " " __TIME__ ")");
+^
+configure:1853:1: warning: declaration of built-in function 'fprintf' requires inclusion of the header <stdio.h> [-Wbuiltin-requires-header]
+2 warnings generated.
+configure:2700: gcc -o conftest -g -O -Wall -Wshadow   conftest.c -ltermcap  1>&5
+configure:2755: gcc -o conftest -g -O -Wall -Wshadow   conftest.c -ltermcap  1>&5
+configure:2810: gcc -c -g -O -Wall -Wshadow  conftest.c 1>&5
+configure:2806:36: error: use of undeclared identifier 'outfuntype'
+extern int xx(); tputs("test", 1, (outfuntype)xx)
+                                   ^
+1 error generated.
+configure:2836: gcc -c -g -O -Wall -Wshadow  conftest.c 1>&5
+configure:2967: gcc -o conftest -g -O -Wall -Wshadow   conftest.c -ltermcap  1>&5
+configure:2958:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+main()
+^~~~
+configure:2963:10: warning: implicit declaration of function 'getcwd' is invalid in C99 [-Wimplicit-function-declaration]
+  return getcwd(buffer, 500) ? 0 : 1;
+         ^
+2 warnings generated.
+configure:3155: gcc -c -g -O -Wall -Wshadow  conftest.c 1>&5
+configure:3178: gcc -o conftest -g -O -Wall -Wshadow   conftest.c -ltermcap  1>&5
+configure:3250: gcc -o conftest -g -O -Wall -Wshadow   conftest.c -ltermcap  1>&5
+configure:3248:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+main() {
+^~~~
+configure:3250:3: warning: implicitly declaring library function 'strcpy' with type 'char *(char *, const char *)'
+  strcpy(buf, "abcdefghi");
+  ^
+configure:3250:3: note: please include the header <string.h> or explicitly provide a declaration for 'strcpy'
+configure:3251:3: warning: implicitly declaring library function 'memmove' with type 'void *(void *, const void *, unsigned long)'
+  bcopy(buf, buf + 2, 3);
+  ^
+configure:3247:22: note: expanded from macro 'bcopy'
+#define bcopy(s,d,l) memmove(d,s,l) 
+                     ^
+configure:3251:3: note: please include the header <string.h> or explicitly provide a declaration for 'memmove'
+configure:3247:22: note: expanded from macro 'bcopy'
+#define bcopy(s,d,l) memmove(d,s,l) 
+                     ^
+configure:3252:7: warning: implicitly declaring library function 'strncmp' with type 'int (const char *, const char *, unsigned long)'
+  if (strncmp(buf, "ababcf", 6))
+      ^
+configure:3252:7: note: please include the header <string.h> or explicitly provide a declaration for 'strncmp'
+configure:3253:5: warning: implicitly declaring library function 'exit' with type 'void (int) __attribute__((noreturn))'
+    exit(1);
+    ^
+configure:3253:5: note: please include the header <stdlib.h> or explicitly provide a declaration for 'exit'
+5 warnings generated.
+etags: skipping /dev/null: it is not a regular file.
+etags: no input files specified.
+	Try `etags --help' for a complete list of options.
+ctags: Unknown option: -t
+ctags: Unknown option: -t
+ctags: Unknown option: -t
+ctags: Unknown option: -i
