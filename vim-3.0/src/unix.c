@@ -34,7 +34,7 @@
 extern int fork();
 # endif
 # if !defined(linux) && !defined(SOLARIS) && !defined(USL) && !defined(sun) && !(defined(hpux) && defined(__STDC__)) && !defined(__NetBSD__) && !defined(__FreeBSD__) && !defined(USL) && !defined(UNISYS)
-extern int execvp __ARGS((const char *, const char **));
+/* extern int execvp __ARGS((const char *, const char **)); */
 # endif
 #endif
 
@@ -114,7 +114,7 @@ static void fill_inbuf __ARGS((void));
 static void sig_winch __ARGS((int));
 #else
 # if defined(SIGWINCH) && !defined(linux) && !defined(__alpha) && !defined(mips) && !defined(_SEQUENT_) && !defined(SCO) && !defined(SOLARIS) && !defined(ISC)
-static void sig_winch __ARGS((int, int, struct sigcontext *));
+/* static void sig_winch __ARGS((int, int, struct sigcontext *)); */
 # endif
 #endif
 
