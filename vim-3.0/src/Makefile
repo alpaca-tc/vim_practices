@@ -178,7 +178,7 @@ DEFS = -DDIGRAPHS -DTERMCAP -DSOME_BUILTIN_TCAPS -DNO_FREE_NULL -DVIM_ISSPACE \
 # linux 1.0 with X11 (TESTED)
 #
 MACHINE = -DBSD_UNIX -DUSE_LOCALE -DUSE_X11
-CC=cc -O -I/usr/X11/include
+CC=cc -O -I/usr/X11/include -Wall -pedantic
 LIBS = -ltermcap -L/usr/X11/lib -lX11
 
 # like generic, but with debugging (NOT TESTED YET)
