@@ -381,7 +381,7 @@ $(TARGET): $(OBJ) version.c
 
 debug: $(OBJ) version.c
 	$(CC) $(CFLAGS) version.c
-	$(CC) -o $(TARGET) -g $(OBJ) version.o $(LIBS)
+	$(CC) -o $(TARGET)_debug -g $(OBJ) version.o $(LIBS)
 
 ctags:
 	ctags *.c *.h
